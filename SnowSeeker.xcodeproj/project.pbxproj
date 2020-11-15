@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D9AF7C125614D8D00D83CC0 /* ResortView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9AF7C025614D8D00D83CC0 /* ResortView.swift */; };
+		4D9AF7C425614E9E00D83CC0 /* SkiDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9AF7C325614E9E00D83CC0 /* SkiDetailsView.swift */; };
+		4D9AF7C725614EEF00D83CC0 /* ResortDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9AF7C625614EEF00D83CC0 /* ResortDetailsView.swift */; };
+		4D9AF7CA256158FC00D83CC0 /* Facility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9AF7C9256158FC00D83CC0 /* Facility.swift */; };
+		4D9AF7CD25615F2F00D83CC0 /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9AF7CC25615F2F00D83CC0 /* Favorites.swift */; };
 		4DC9CC542560E32B0089C964 /* Resort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC9CC532560E32B0089C964 /* Resort.swift */; };
 		4DC9CC592560E3B80089C964 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC9CC582560E3B80089C964 /* Bundle-Decodable.swift */; };
 		4DC9CC5D2560E4970089C964 /* resorts.json in Resources */ = {isa = PBXBuildFile; fileRef = 4DC9CC5C2560E4970089C964 /* resorts.json */; };
+		4DC9CC612560E8400089C964 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC9CC602560E8400089C964 /* WelcomeView.swift */; };
 		4DD8666E256015F700BB6680 /* SnowSeekerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD8666D256015F700BB6680 /* SnowSeekerApp.swift */; };
 		4DD86670256015F700BB6680 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD8666F256015F700BB6680 /* ContentView.swift */; };
 		4DD86672256015F800BB6680 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DD86671256015F800BB6680 /* Assets.xcassets */; };
@@ -17,9 +23,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D9AF7C025614D8D00D83CC0 /* ResortView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResortView.swift; sourceTree = "<group>"; };
+		4D9AF7C325614E9E00D83CC0 /* SkiDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkiDetailsView.swift; sourceTree = "<group>"; };
+		4D9AF7C625614EEF00D83CC0 /* ResortDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResortDetailsView.swift; sourceTree = "<group>"; };
+		4D9AF7C9256158FC00D83CC0 /* Facility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Facility.swift; sourceTree = "<group>"; };
+		4D9AF7CC25615F2F00D83CC0 /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
 		4DC9CC532560E32B0089C964 /* Resort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resort.swift; sourceTree = "<group>"; };
 		4DC9CC582560E3B80089C964 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
 		4DC9CC5C2560E4970089C964 /* resorts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = resorts.json; sourceTree = "<group>"; };
+		4DC9CC602560E8400089C964 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		4DD8666A256015F700BB6680 /* SnowSeeker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnowSeeker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DD8666D256015F700BB6680 /* SnowSeekerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnowSeekerApp.swift; sourceTree = "<group>"; };
 		4DD8666F256015F700BB6680 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -43,6 +55,8 @@
 			isa = PBXGroup;
 			children = (
 				4DC9CC532560E32B0089C964 /* Resort.swift */,
+				4D9AF7C9256158FC00D83CC0 /* Facility.swift */,
+				4D9AF7CC25615F2F00D83CC0 /* Favorites.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -53,6 +67,18 @@
 				4DC9CC582560E3B80089C964 /* Bundle-Decodable.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4DC9CC5F2560E8290089C964 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4DD8666F256015F700BB6680 /* ContentView.swift */,
+				4D9AF7C325614E9E00D83CC0 /* SkiDetailsView.swift */,
+				4D9AF7C625614EEF00D83CC0 /* ResortDetailsView.swift */,
+				4DC9CC602560E8400089C964 /* WelcomeView.swift */,
+				4D9AF7C025614D8D00D83CC0 /* ResortView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		4DD86661256015F700BB6680 = {
@@ -74,10 +100,10 @@
 		4DD8666C256015F700BB6680 /* SnowSeeker */ = {
 			isa = PBXGroup;
 			children = (
+				4DC9CC5F2560E8290089C964 /* View */,
 				4DC9CC572560E3A30089C964 /* Extensions */,
 				4DC9CC522560E3110089C964 /* Model */,
 				4DD8666D256015F700BB6680 /* SnowSeekerApp.swift */,
-				4DD8666F256015F700BB6680 /* ContentView.swift */,
 				4DD86671256015F800BB6680 /* Assets.xcassets */,
 				4DD86676256015F800BB6680 /* Info.plist */,
 				4DC9CC5C2560E4970089C964 /* resorts.json */,
@@ -164,8 +190,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DC9CC612560E8400089C964 /* WelcomeView.swift in Sources */,
+				4D9AF7C425614E9E00D83CC0 /* SkiDetailsView.swift in Sources */,
+				4D9AF7C725614EEF00D83CC0 /* ResortDetailsView.swift in Sources */,
+				4D9AF7CD25615F2F00D83CC0 /* Favorites.swift in Sources */,
+				4D9AF7CA256158FC00D83CC0 /* Facility.swift in Sources */,
 				4DD86670256015F700BB6680 /* ContentView.swift in Sources */,
 				4DC9CC542560E32B0089C964 /* Resort.swift in Sources */,
+				4D9AF7C125614D8D00D83CC0 /* ResortView.swift in Sources */,
 				4DD8666E256015F700BB6680 /* SnowSeekerApp.swift in Sources */,
 				4DC9CC592560E3B80089C964 /* Bundle-Decodable.swift in Sources */,
 			);
