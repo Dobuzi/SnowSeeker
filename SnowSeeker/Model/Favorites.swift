@@ -13,6 +13,16 @@ class Favorites: ObservableObject {
     private let saveKey = "Favorites"
     
     init() {
+        let path = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+        let fileName: URL = path.appendingPathComponent(self.saveKey)
+        
+        if let data = try? Data(contentsOf: fileName) {
+            if let decoded = try? JSONDecoder().decode(Set<String>.self, from: data) {
+                self.resorts = decoded
+                return
+            }
+        }
+        
         self.resorts = []
     }
     
@@ -32,7 +42,15 @@ class Favorites: ObservableObject {
         save()
     }
     
-    func save() {
+    private func save() {
+        let path = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+        let fileName: URL = path.appendingPathComponent(self.saveKey)
         
+        do {
+            let encoded = try? JSONEncoder().encode(self.resorts)
+            try encoded?.write(to: fileName, options: [.atomicWrite, .completeFileProtection])
+        } catch {
+            print("Unable to save the favorites data.")
+        }
     }
 }
